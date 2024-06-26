@@ -30,7 +30,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/2217e1bd03dc0f8146d75.jpg')
 
 # Admins, Channels & Users
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "DEEP") # widout 👉 @
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6467566398').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6467566398 7135984121').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002151783803').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
