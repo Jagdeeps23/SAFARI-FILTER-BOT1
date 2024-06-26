@@ -32,7 +32,7 @@ from database.gfilters_mdb import (
     del_allg
 )
 import logging
-REACTION = ["🔥", "❤️", "😍", "⚡", "👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🤬", "😢", "🎉", "🤩", "🤮", "💩", "🙏", "👌", "🕊", "🤡", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "🍾", "💋", "🖕", "😈", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
+REACTION = ["🔥", "❤️", "😍", "⚡", "👍", "👎", "❤", "🔥", "🥰", "👏", "😁", "🤔", "🤯", "😱", "🌹", "😢", "🎉", "🤩", "🤮", "✈️", "🙏", "👌", "🕊", "🤡", "❤‍🔥", "🌚", "🌭", "💯", "🤣", "⚡", "🍌", "🏆", "🍾", "💋", "👻", "😈", "👨‍💻", "👀", "🎃", "🙈", "😇", "😨", "🤝", "✍", "🤗", "🫡", "🎅", "🎄", "😘", "💊", "🙊", "😎", "👾", "🤷‍♂", "🤷", "🤷‍♀", "😡"]
 from urllib.parse import quote_plus
 from SAFARI.utils.file_properties import get_name, get_hash, get_media_file_size
 
@@ -216,8 +216,8 @@ async def next_page(bot, query):
         ]
         btn.insert(0, [
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{req}"),
-            InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{req}"),
-            InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{req}")
+            InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{req}"),
+            InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"Deep25K#{req}")
         ])
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),  
@@ -226,8 +226,8 @@ async def next_page(bot, query):
         btn = []
         btn.insert(0, [
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{req}"),
-            InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{req}"),
-            InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{req}")
+            InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{req}"),
+            InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"Deep25K#{req}")
         ])
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),  
@@ -346,8 +346,8 @@ async def language_check(bot, query):
             ]
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{userid}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{userid}"),
+                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"Deep25K#{userid}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}")
@@ -356,8 +356,8 @@ async def language_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
-                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{userid}"),
+                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"Deep25K#{userid}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}")
@@ -437,7 +437,7 @@ async def select_language(bot, query):
         pass
     await query.answer()
 
-@Client.on_callback_query(filters.regex(r"^lusifilms"))
+@Client.on_callback_query(filters.regex(r"^Backup625"))
 async def quality_check(bot, query):
     curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     _, userid, quality = query.data.split("#")
@@ -479,8 +479,8 @@ async def quality_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
-                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{userid}"),
+                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"Deep25K#{userid}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}")
@@ -534,16 +534,16 @@ async def select_quality(bot, query):
     btn = [[
         InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Qᴜᴀʟɪᴛʏꜱ ↓", callback_data=f"lusifilms#{userid}#unknown")
     ],[
-        InlineKeyboardButton("480p", callback_data=f"lusifilms#{userid}#480p"),
-        InlineKeyboardButton("720p", callback_data=f"lusifilms#{userid}#720p")
+        InlineKeyboardButton("480p", callback_data=f"Backup625#{userid}#480p"),
+        InlineKeyboardButton("720p", callback_data=f"Backup625#{userid}#720p")
     ],[
-        InlineKeyboardButton("1080p", callback_data=f"lusifilms#{userid}#1080p"),
-        InlineKeyboardButton("1080p HQ", callback_data=f"lusifilms#{userid}#1080p HQ")
+        InlineKeyboardButton("1080p", callback_data=f"Backup625#{userid}#1080p"),
+        InlineKeyboardButton("1080p HQ", callback_data=f"Backup625#{userid}#1080p HQ")
     ],[
-        InlineKeyboardButton("1440p", callback_data=f"lusifilms#{userid}#1440p"),
-        InlineKeyboardButton("2160p", callback_data=f"lusifilms#{userid}#2160p")
+        InlineKeyboardButton("1440p", callback_data=f"Backup625#{userid}#1440p"),
+        InlineKeyboardButton("2160p", callback_data=f"Backup625#{userid}#2160p")
     ],[
-        InlineKeyboardButton("Gᴏ Bᴀᴄᴋ", callback_data=f"lusifilms#{userid}#home")
+        InlineKeyboardButton("Gᴏ Bᴀᴄᴋ", callback_data=f"Backup625#{userid}#home")
     ]]
     try:
        await query.edit_message_reply_markup(
@@ -585,8 +585,8 @@ async def seasons_check(bot, query):
             ]
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
-                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{userid}"),
+                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"Deep25K#{userid}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}")
@@ -595,8 +595,8 @@ async def seasons_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
-                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{userid}"),
+                InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"Deep25K#{userid}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}")
@@ -642,7 +642,7 @@ async def seasons_check(bot, query):
     else:
         return await query.answer(f"Sᴏʀʀʏ, Nᴏ ғɪʟᴇs ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
 
-@Client.on_callback_query(filters.regex(r"^safaridev"))
+@Client.on_callback_query(filters.regex(r"^Deep25K"))
 async def select_seasons(bot, query):
     _, userid = query.data.split("#")
     if int(userid) not in [query.from_user.id, 0]:
@@ -2006,8 +2006,8 @@ async def auto_filter(client, msg, spoll=False):
             ]
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇs", callback_data=f"select_lang#{message.from_user.id}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{message.from_user.id}"),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{message.from_user.id}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{message.from_user.id}"),
+                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"Deep25K#{message.from_user.id}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
@@ -2016,8 +2016,8 @@ async def auto_filter(client, msg, spoll=False):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇs", callback_data=f"select_lang#{message.from_user.id}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{message.from_user.id}"),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{message.from_user.id}")
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"Backup625#{message.from_user.id}"),
+                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"Deep25K#{message.from_user.id}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
