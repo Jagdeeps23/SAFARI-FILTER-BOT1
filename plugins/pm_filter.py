@@ -132,7 +132,7 @@ async def reply_stream(client, message):
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def private_filter(client, message):
     await message.react(emoji=random.choice(REACTION), big=True)
-    if PM_FILTER is True:
+    if PM_FILTER is False:
         await auto_filter(client, message)
     else:
         content = message.text
