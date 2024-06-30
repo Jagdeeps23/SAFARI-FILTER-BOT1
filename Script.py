@@ -132,8 +132,10 @@ BOT {}"""
 
 ★ Message <code>{}</code>"""
 
-    CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <b>{file_name}</b>"""
+    CAPTION = """ 📂 <i><a href="https://t.me/movies6251">{file_caption} 
+    ⚙️ Sɪᴢᴇ : {file_size}</a></i>\n\n</a></b>\n\n<b>⚜️ POWERED BY : <a href=https://t.me/Backup625>[𝙈𝙓] 
+    ♡ ㅤ  ❍ㅤ     ⎙     ⌲
+   ˡᶦᵏᵉ ᶜᵒᵐᵐᵉⁿᵗ  ˢᵃᵛᵉ  ˢʰᵃʳᵉ</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>
