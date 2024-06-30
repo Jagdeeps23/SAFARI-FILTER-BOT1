@@ -27,3 +27,4 @@ apscheduler
 pyshorteners
 pyromod
 colorama
+pyrofork
