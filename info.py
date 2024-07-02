@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', "25625749"))
-API_HASH = environ.get('API_HASH', "1b4a47426f1189e4c406057be9735e3b")
+API_ID = int(environ.get('API_ID', ""))
+API_HASH = environ.get('API_HASH', "")
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
@@ -62,15 +62,15 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HOWTO615'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/HOWTO615")
-VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
-VERIFY2_API = environ.get('VERIFY2_API', "f714ac68167d6b77966d85a8a33dc3e0293b37f3")
+VERIFY2_URL = environ.get('VERIFY2_URL', "publicearn.com")
+VERIFY2_API = environ.get('VERIFY2_API', "861d91eb64565fee47d1322836257bdba96aadac")
 
 # file Shortner urls
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'f714ac68167d6b77966d85a8a33dc3e0293b37f3')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shortnf')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
