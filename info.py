@@ -72,7 +72,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'f714ac68167d6b77966d85a8a33dc3e0293b37f3')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
 
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shortnf')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HOWTO615')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
