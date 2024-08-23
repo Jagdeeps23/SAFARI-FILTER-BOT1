@@ -62,14 +62,14 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HOWTO615'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/HOWTO615")
 VERIFY2_URL = environ.get('VERIFY2_URL', "publicearn.com")
 VERIFY2_API = environ.get('VERIFY2_API', "861d91eb64565fee47d1322836257bdba96aadac")
 
 # file Shortner urls
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'f714ac68167d6b77966d85a8a33dc3e0293b37f3')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '861d91eb64565fee47d1322836257bdba96aadac')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), True)
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HOWTO615')
@@ -79,7 +79,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Moviesrequst1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movies6251')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Backup625')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002175259905))
